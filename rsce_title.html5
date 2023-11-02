@@ -1,0 +1,11 @@
+<?php if( $this->headline ): ?>
+  <<?php echo $this->hl ?> itemprop="title" class="title">
+  <?php echo $this->headline ?>
+  </<?php echo $this->hl ?>>
+<?php endif; ?>
+
+<?php if( $this->title): ?>
+  <<?= $this -> title['unit'] ?> class="rsce_dev__subtitle">
+  <?= $this -> title['value'] ?>
+  </<?= $this -> title['unit'] ?>>
+<?php endif; ?>

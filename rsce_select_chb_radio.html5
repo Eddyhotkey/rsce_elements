@@ -1,0 +1,5 @@
+<?= ($this->checkbox) ? '...': ''?>
+
+<?php if ( $this->radio == 'option_1' ): ?>
+  ...
+<?php endif; ?>

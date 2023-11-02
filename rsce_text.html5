@@ -1,0 +1,17 @@
+<?php if ( $this->text_tinyMCE ): ?>
+  <div class="rsce_tinyMCE">
+    <?= $this->text_tiyMCE ?>
+  </div>
+<?php endif; ?>
+
+<?php if ( $this->textarea ): ?>
+  <p class="rsce_textarea">
+    <?= $this->textarea ?>
+  </p>
+<?php endif; ?>
+
+<?php if ( $this-> text): ?>
+  <p class="rsce_text">
+    <?= $this->text ?>
+  </p>
+<?php endif; ?>

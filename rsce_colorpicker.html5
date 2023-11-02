@@ -1,0 +1,7 @@
+<div class="<?= $this->class ?>"
+  <?= $this->cssID ?>
+   style="background-color: #<?= $this->colorpicker ?>;"
+   itemscope itemtype="http://schema.org/Article"
+>
+
+</div>

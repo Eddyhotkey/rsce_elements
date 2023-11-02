@@ -1,0 +1,7 @@
+<?php if( deserialize( $this->module) ): ?>
+  {{insert_module::<?=$this->module ?>}}
+<?php endif ?>
+
+<?php foreach (deserialize($this->nodes, true) as $name): ?>
+  {{insert_nodes::<?= $name ?>}}
+<?php endforeach ?>

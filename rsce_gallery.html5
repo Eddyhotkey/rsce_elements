@@ -1,0 +1,12 @@
+<?php $dataSorted = array_map('\StringUtil::binToUuid', deserialize($this->orderSRC, true)); ?>
+<?php foreach ( $dataSorted as $data ) : ?>
+  <?php if ($image = $this->getImageObject($data, $this->size)) : ?>
+    <?php if (TL_MODE === 'BE') : ?>
+      <?php $strImageCrop = $this->getImage($image->picture['img']['src'], 100, '', 'center_center'); ?>
+      <img src="<?= $strImageCrop ?>">
+    <?php endif; ?>
+    <?php if (TL_MODE === 'FE') : ?>
+      <?php $this->insert('picture_default', $image->picture); ?>
+    <?php endif; ?>
+  <?php endif; ?>
+<?php endforeach ?>

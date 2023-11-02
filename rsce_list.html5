@@ -1,0 +1,3 @@
+<?php foreach ( $this->list as  $item ): ?>
+  ...
+<?php endforeach; ?>

@@ -1,0 +1,28 @@
+<?php if ( $this->image_size ): ?>
+  <div class="image">
+    <?php if ( $image = $this->arrData['getImageObject']($this -> image, $this->image_size ) ): ?>
+      <?php $image->picture['alt'] = $this->image_alt ?>
+      <?php $image->picture['title'] = $this->image_title ?>
+      <?php $this->insert('image', (array) $image); ?>
+    <?php endif; ?>
+  </div>
+<?php else: ?>
+  <div class="image">
+    <?php if ( $image = $this->arrData['getImageObject']($this -> image, [null, null, 19] ) ): ?>
+      <?php $image->picture['alt'] = $this->image_alt ?>
+      <?php $image->picture['title'] = $this->image_title ?>
+      <?php $this->insert('image', (array) $image); ?>
+    <?php endif; ?>
+  </div>
+<?php endif; ?>
+
+
+<?php if ( $icon= $this->arrData['getImageObject']($this -> icon )): ?>
+  <img
+    class="icon"
+    src="<?= $icon->src ?>"
+    alt="<?= $icon->alt ?: $this->icon_alt ?>"
+    title="<?= $this->icon_title ?>"
+    <?= $icon->imgSize ?>
+  >
+<?php endif; ?>
