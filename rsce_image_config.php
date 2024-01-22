@@ -98,7 +98,7 @@ return array(
       'eval' => array(
         'fieldType' => 'radio',
         'filesOnly' => true,
-        'extensions' => 'jpg,jpeg,png,gif,svg',
+        'extensions' => 'jpg,jpeg,png,gif,svg,webp',
         'tl_class'=>'clr',
         'mandatory' => true,
       ),
