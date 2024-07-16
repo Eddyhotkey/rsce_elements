@@ -14,7 +14,7 @@ return array(
   'fields' => array(
 
     ### tinyMCE ###
-    'text_tiyMCE' => array(
+    'text_tinyMCE' => array(
       'label' => array('Beschreibung', 'Hier können Sie die Beschreibung hinzufügen'),
       'eval' => array(
         'rte' => 'tinyMCE',
