@@ -1,8 +1,8 @@
 <?php if ( $this->link ): ?>
   <a href="<?= $this->link ?>"
      class="__link"
-     title="link_title"
-     aria-label="link_aria_label"
+     title="<?= $this->link_title ?>"
+     aria-label="<?= $this->link_aria_label ?>"
   >
     <?= $this->link_text ?>
   </a>
