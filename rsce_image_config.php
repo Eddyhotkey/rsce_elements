@@ -72,7 +72,7 @@ return array(
         'de' => array('Bildgröße', 'Hier können Sie die Abmessungen des Bildes und den Skalierungsmodus festlegen.'),
       ),
       'inputType' => 'imageSize',
-      'options' => \System::getImageSizes(),
+      'options' => \Contao\System::getContainer()->get('contao.image.sizes')->getAllOptions();
       'eval' => array('tl_class' => 'w50 clr'),
       'dependsOn' => [
         'field' => 'image_size_checkbox',
